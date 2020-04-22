@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* your codes starts from here..... */
+
+/* logo part start */
+
+li.nav-item {
+    margin-left: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* logo part end */
+
+
+/* banner part start */
+
+.banner{
+    background-image: url(../images/StrictBanner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.hg{
+    min-height: 90vh;
+}
+.banner h1{
+
+font-size: 100px;
+
+text-transform: uppercase;
+
+color: #fff;
+}
+.banner span{
+    
+height: 2px;
+    
+width: 100%;
+    
+display: inline-block;
+    
+background-color: #15a4fa;
+}
+.banner p{
+    
+margin: 20px 0;
+    
+color: #cecece;
+}
+.btn-danger{
+    margin: 15px;
+    background: transparent;
+    border: 1px solid #15a4fa;
+    color: #fff;
+}
+.btn-danger:hover{
+    background-color: #15a4fa;
+    border: 1px solid #15a4fa;
+    color: #fff;
+}
+.icon{
+    
+position: absolute;
+    
+bottom: -50px;
+    
+left: -50%;
+    
+right: -50%;
+    
+animation: top_bottom 3s linear infinite;
+    
+animation-direction: alternate;
+}
+@keyframes top_bottom{
+    0%{
+        bottom: -50px;  
+    }
+    100%{
+        bottom: -130px;
+    }
+}
+
+
+/* banner part end */
+
+/* designer part start */
+
+.designer{
+ background: #eaeaea;
+ padding: 50px 0px;
+}
+.designer h1{
+    color: #2d3950;
+    font-size: 40px;
+}
+.designer p{
+    color: #999999;
+    font-size: 20px;
+    padding-top: 25px;
+
+    
+}
+
+/* designer part end */
+
+/* feature part start */
+ .feature{
+     padding: 50px 0px;
+
+ }
+ .feature h5{
+ color: #2d3950;
+ font-size: 22px;
+ margin: 18px 0px;
+ }
+ .feature p{
+color: #999999;
+font-size: 15px;
+ }
+ .feature-icon{
+     
+font-size: 50px;
+     
+height: 100px;
+     
+width: 100px;
+     
+text-align: center;
+     
+line-height: 100px;
+
+margin: auto;
+
+background: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+49,5fc3ff+49,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 0%, #48baff 49%, #5fc3ff 49%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 49%,#5fc3ff 49%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 49%,#5fc3ff 49%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+;
+ }
+
+/* feature part end */
+
+
+/* show-case part start */
+.show-case{
+    background: #f6f9f9;
+}
+.show-case h1{
+    padding-top: 40px;
+}
+.part{
+    margin-top: 30px;
+}
+.item{
+ position: relative;
+}
+.item::before{
+content: '';
+ position: absolute;
+ background-color: #48baff96;
+ height: 0%;
+ width: 100%;
+ top: 0; 
+ left: 0;
+ transition: .5s all ease-in-out;
+
+}
+.item:hover::before{
+    height: 100%;
+}
+.item-logo{
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+opacity: 0;
+}
+.item-logo ul{
+    
+display: flex;
+    
+justify-content: center;
+    
+list-style: none;
+    
+color: #fff;
+    
+width: 80px;
+}
+.item-logo ul li{
+      
+border: 1px solid;
+    
+padding: 5px 8px;
+    
+border-radius: 2px;
+}
+
+.show-gallery:hover .item-logo{
+ opacity: 1;
+}
+
+/* show-case part end */
+
+
+
+/* highway start */
+
+.highway{
+
+}
+.highway h1 {
+    color: #fff;
+}
+.highway p {
+    color: #fff;
+}
+.mail{
+    position: relative;
+    margin-top: 50px;
+   }
+   .mail::before{
+   content: '';
+   position: absolute;
+   background-color: #4164a29c;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   }
+   .road-item .mail{
+
+    position: absolute;
+    
+    top: 50%;
+    
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    
+    opacity: 0;
+    }
+    .mail{
+        background-image: url(../images/StrictHighway.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 90vh;
+    }
+    input[type="text"] {
+        width: 100%;
+        height: 55px;
+        margin: 15px 0px;
+        padding-left: 15px;
+        background: transparent;
+        border: none;
+        border: 1px solid #999999;
+    }
+    input[type="email"] {
+        width: 100%;
+        height: 55px;
+        margin: 15px 0px;
+        padding-left: 15px;
+        background: transparent;
+        border: none;
+        border: 1px solid #999999;
+        te: black;
+    }
+    input[type="button"] {
+        border: none;
+        border: 1px solid #2d384c;
+        padding: 5px 15px;
+        background: transparent;
+    }
+    textarea {
+        width: 100%;
+        padding: 25px;
+        height: 130px;
+        background: transparent;
+        /* color: black; */
+        border: none;
+        border: 1px solid #999999;
+    }
+.mail .container form .submit ul{
+
+display: flex;
+
+justify-content: space-between;
+}
+.mail .container form .submit ul li{
+
+list-style: none;
+}
+/* highway end */
+
+/* footer part start */
+
+footer{
+
+background: #eaeaea;
+
+padding: 20px 0;
+
+/* margin-top: 30px; */
+
+display: flex;
+
+justify-content: space-between;
+
+width: 100%;
+}
+.footer-content{
+    
+width: 50%;
+    
+}
+.terms{
+
+    MARGIN-LEFT: 100PX;
+}
+.terms p{
+    color: #909090;
+}
+.link{
+
+width: 20%;
+}
+.link ul{
+
+display: flex;
+
+justify-content: space-between;
+
+padding-right: 100px;
+}
+.link ul li{
+    
+LIST-STYLE: NONE;
+}
+
+
+/* footer part end */
+
+
+
+
+
+/* your codes ends here..... */
